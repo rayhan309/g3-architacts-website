@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* body styles */
+
+/* mai section styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* sheared styles sector */
+
+
+.dis-flex{
+    display: flex;
+}
+.dark1{
+    color: #131313;
+}
+.dark2{
+    color: #424242;
+}
+.dark3{
+    color: #727272;
+}
+.font-weigth{
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn-1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 50px;
+    
+}
+.text-center{
+    text-align: center;
+}
+/* navber styles sector */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+    /* margin: 5%; */
+}
+.navber, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.navber{
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+}
+.li-container{
+    gap: 30px;
+}
+
+.li-item{
+    list-style: none;
+}
+.li-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+/* banner styles */
+.banner-1{
+    max-width: 850px;
+    margin: 0 auto;
+    /* text-align: center; */
+    
+}
+ /* .banner-2{
+    max-width: 1140px;
+    margin: 0 auto;
+
+ } */
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+header img{
+    width: 100%;
+    margin-bottom: 50px;
+    /* margin: 0 auto; */
+}
+
+/* team relatead styles */
+.teams{
+    align-items: center;
+    margin: 80px;
+}
+.team-drection{
+   margin-left: 70px;
+   width: 530px;
+    border: 1px solid black;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.Quick{
+    font-size: 45px;
+    font-weight: 600;
+}
+.of{
+    font-size: 45px;
+    font-weight: bold;
+}
+.features{
+    font-size: 45px;
+    font-weight: bold;
+    color: #FF900E;
+}
+/* relatip stykes */
+@media screen and (max-width: 576px) {
+    .navber, .li-container{
+        flex-direction: column;
+    }    
+}
