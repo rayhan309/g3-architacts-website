@@ -17,7 +17,11 @@ main{
 }
 
 /* sheared styles sector */
-
+.font-weigthe{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 5px;
+}
 
 .dis-flex{
     display: flex;
@@ -32,7 +36,7 @@ main{
     color: #727272;
 }
 .font-weigth{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
 }
 .btn-1{
@@ -49,6 +53,12 @@ main{
 .text-center{
     text-align: center;
 }
+
+.card-description{
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* navber styles sector */
 .header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -72,7 +82,7 @@ main{
 }
 .li-link{
     text-decoration: none;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 500;
 
 }
@@ -104,10 +114,14 @@ header img{
     align-items: center;
     margin: 80px;
 }
+.vai{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 .team-drection{
    margin-left: 70px;
    width: 530px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .team-img-container{
     display: grid;
@@ -127,9 +141,63 @@ header img{
     font-weight: bold;
     color: #FF900E;
 }
+/* section 2 styles area */
+.section2-title{
+    margin-bottom: 0;
+}
+.card-container{
+    display: flex;
+    gap: 124px;
+}
+.card-item{
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.card-title{
+
+    margin: 1px;
+
+}
+.section2-title{
+    margin-top: 130px;
+}
+.section-description{
+    
+    margin-bottom: 100px;
+}
+
 /* relatip stykes */
 @media screen and (max-width: 576px) {
-    .navber, .li-container{
-        flex-direction: column;
+     .li-container, .navber, .card-container{ 
+    flex-direction: column;
     }    
+}
+/* main section layout */
+
+@media screen and (max-width: 1200px) {
+    .teams{
+        flex-direction: column-reverse;
+       
+    }    
+}
+/* mai img section styles */
+@media screen and (max-width: 730px) {
+     .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+     }
+     .team-drection{
+        width: 450px;
+        margin-left: 10px;
+        margin-right: 0;
+     }
 }
