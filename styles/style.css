@@ -133,7 +133,7 @@ header img{
     font-weight: 600;
 }
 .of{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 .features{
@@ -167,18 +167,50 @@ header img{
 
 }
 .section2-title{
+    
     margin-top: 130px;
 }
 .section-description{
-    
+    max-width: 570px;
     margin-bottom: 100px;
 }
 
+/* section styles area */
+.mar{
+   
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.section3-title{
+    margin: 10px;
+ }
+.section3-descriptio{
+    margin: 10px;
+}
+.imag-container{
+    gap: 150px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+.imag-container img{
+    filter: grayscale(100%);
+}
 /* relatip stykes */
 @media screen and (max-width: 576px) {
      .li-container, .navber, .card-container{ 
     flex-direction: column;
-    }    
+    }  
+    .card-container{
+        margin: 20px;
+        justify-items: center;
+    }
+    
+    .card-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+    }  
 }
 /* main section layout */
 
@@ -186,7 +218,12 @@ header img{
     .teams{
         flex-direction: column-reverse;
        
-    }    
+    }  
+    .card-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+    }  
 }
 /* mai img section styles */
 @media screen and (max-width: 730px) {
@@ -196,8 +233,12 @@ header img{
         gap: 20px;
      }
      .team-drection{
-        width: 450px;
-        margin-left: 10px;
-        margin-right: 0;
+        max-width: 375px;
+        margin-left: 0;
+     }
+     .card-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
      }
 }
