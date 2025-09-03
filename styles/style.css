@@ -36,7 +36,7 @@ main{
     color: #727272;
 }
 .font-weigth{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 .btn-1{
@@ -55,7 +55,7 @@ main{
 }
 
 .card-description{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -129,7 +129,7 @@ header img{
     gap: 24px;
 }
 .Quick{
-    font-size: 45px;
+    font-size: 2.8;
     font-weight: 600;
 }
 .of{
@@ -137,10 +137,53 @@ header img{
     font-weight: bold;
 }
 .features{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: bold;
     color: #FF900E;
 }
+/* section-4 styles area */
+.section4-container{
+    gap: 52px;
+}
+.cadr-1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.section4-title{
+    padding: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+}
+.section4-des{
+    margin: 3px;
+}
+.images img{
+    border-radius: 8px;
+    width: 100%;
+}
+.btn-2{
+    background-color: #FF900E;
+    padding: 45px 42px;
+    border: none;
+    border-radius: 8px;
+    margin-top: -100px;
+    margin-left: -92px;
+}
+.span1{
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.span2{
+    
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 /* section 2 styles area */
 .section2-title{
     margin-bottom: 0;
@@ -198,7 +241,12 @@ header img{
 }
 /* relatip stykes */
 @media screen and (max-width: 576px) {
-     .li-container, .navber, .card-container{ 
+     .li-container,
+      .navber,
+      .card-container,
+      .section4-container,
+      .imag-container
+      { 
     flex-direction: column;
     }  
     .card-container{
@@ -211,6 +259,9 @@ header img{
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 20px;
     }  
+    .btn-2{
+        display: none;
+    }
 }
 /* main section layout */
 
